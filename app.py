@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import pandas as pd
 import numpy as np
 import pickle
+import sklearn
 
 model = pickle.load(open('model.pkl', 'rb'))
 df1 = pd.read_csv('Symptom-severity.csv')
